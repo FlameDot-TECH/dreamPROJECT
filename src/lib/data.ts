@@ -5,9 +5,10 @@ export const siteConfig = {
     content: `亲爱的追梦一班的每一位成员，\n\n欢迎来到我们的班级网站！\n\n这里是我们共同的数字家园，记录我们的点滴成长，分享我们的欢声笑语。愿这个小小的网站，能成为我们青春岁月里一个温暖的角落，见证我们的友谊与梦想。\n\n让我们一起，继续追梦！`,
   },
   navLinks: [
-    { name: '班级介绍', href: '#class-intro' },
-    { name: '成员风采', href: '#member-showcase' },
-    { name: '美丽教师', href: '#teacher-showcase' },
+    { name: '首页', href: '/' },
+    { name: '班级介绍', href: '/class-intro' },
+    { name: '成员风采', href: '/member-showcase' },
+    { name: '美丽教师', href: '/teacher-showcase' },
   ],
   hero: {
     title: '追梦一班',

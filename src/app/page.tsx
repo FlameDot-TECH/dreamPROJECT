@@ -39,11 +39,11 @@ export default function Home() {
           </div>
 
           {/* Wrapper for content sections */}
-          <div className="space-y-12 md:space-y-24 py-12">
+          <div className="bg-background space-y-12 md:space-y-24 py-12">
             
             {/* 班级介绍 */}
             <section id={siteConfig.classIntro.id} className="container mx-auto px-4 md:px-6 scroll-mt-20">
-              <Card className="overflow-hidden bg-background/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl transition-all hover:shadow-2xl hover:border-primary/40">
+              <Card className="overflow-hidden bg-card/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl transition-all hover:shadow-2xl hover:border-primary/40">
                 <div className="grid md:grid-cols-2 gap-0 items-center">
                   <div className="p-8 md:p-12 order-2 md:order-1">
                     <h2 className="text-3xl font-headline font-bold">{siteConfig.classIntro.title}</h2>
@@ -64,7 +64,7 @@ export default function Home() {
 
             {/* 成员风采 */}
             <section id={siteConfig.memberShowcase.id} className="container mx-auto px-4 md:px-6 scroll-mt-20">
-              <Card className="p-8 md:p-12 bg-background/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl">
+              <Card className="p-8 md:p-12 bg-card/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl">
                 <div className="text-center">
                   <h2 className="text-3xl font-headline font-bold">{siteConfig.memberShowcase.title}</h2>
                   <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">{siteConfig.memberShowcase.description}</p>
@@ -86,7 +86,7 @@ export default function Home() {
 
             {/* 美丽教师 */}
             <section id={siteConfig.teacherShowcase.id} className="container mx-auto px-4 md:px-6 scroll-mt-20">
-               <Card className="p-8 md:p-12 bg-background/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl">
+               <Card className="p-8 md:p-12 bg-card/80 backdrop-blur-lg border-2 border-primary/20 shadow-xl">
                   <div className="text-center">
                     <h2 className="text-3xl font-headline font-bold">{siteConfig.teacherShowcase.title}</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">{siteConfig.teacherShowcase.description}</p>
