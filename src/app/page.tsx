@@ -78,8 +78,8 @@ export default function Home() {
                   <h2 className="text-3xl font-headline font-bold">{siteConfig.memberShowcase.title}</h2>
                   <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">{siteConfig.memberShowcase.description}</p>
                 </div>
-                <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-10">
-                  {siteConfig.memberShowcase.members.map((member) => (
+                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-10">
+                  {siteConfig.memberShowcase.members.slice(0, 3).map((member) => (
                     <div key={member.name} className="text-center flex flex-col items-center group">
                       <Avatar className="w-24 h-24 border-4 border-transparent group-hover:border-accent transition-colors duration-300">
                         <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.dataAiHint} />
@@ -108,7 +108,7 @@ export default function Home() {
                     <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">{siteConfig.teacherShowcase.description}</p>
                   </div>
                   <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {siteConfig.teacherShowcase.teachers.map((teacher) => (
+                    {siteConfig.teacherShowcase.teachers.slice(0, 3).map((teacher) => (
                       <div key={teacher.name} className="text-center p-6 bg-card/90 rounded-lg hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-300">
                         <Avatar className="w-32 h-32 mx-auto border-4 border-primary">
                           <AvatarImage src={teacher.image} alt={teacher.name} data-ai-hint={teacher.dataAiHint}/>
