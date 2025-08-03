@@ -35,7 +35,7 @@ export default function Home() {
             <p className="mt-4 text-lg md:text-2xl font-body drop-shadow-md animate-fade-in-up">
               {siteConfig.hero.subtitle}
             </p>
-            <a href="#class-intro" aria-label="Scroll down" className="absolute bottom-10 animate-bounce">
+            <a href="#class-intro" aria-label="Scroll down" className="absolute bottom-20 animate-bounce">
               <ArrowDown className="h-8 w-8 text-white" />
             </a>
           </div>
