@@ -6,7 +6,7 @@ import { WelcomeLetter } from '@/components/welcome-letter';
 import { siteConfig } from '@/lib/data';
 import { Card } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { ArrowDown, ArrowUp, ArrowRight } from 'lucide-react';
+import { ArrowDown, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Wrapper for content sections */}
-          <div className="bg-background space-y-12 md:space-y-24 py-12 relative">
+          <div className="bg-background space-y-12 md:space-y-24 py-12">
             
             {/* 班级介绍 */}
             <section id={siteConfig.classIntro.id} className="container mx-auto px-4 md:px-6 scroll-mt-20">
@@ -128,11 +128,6 @@ export default function Home() {
                   </div>
                </Card>
             </section>
-             <a href="#" aria-label="Scroll to top" className="sticky bottom-8 mr-8 self-end">
-              <Button variant="outline" size="icon" className="rounded-full shadow-lg bg-background/80 hover:bg-primary/20">
-                <ArrowUp className="h-6 w-6" />
-              </Button>
-            </a>
           </div>
         </main>
         <Footer />
