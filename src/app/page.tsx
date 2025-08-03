@@ -50,7 +50,7 @@ export default function Home() {
                   <div className="p-8 md:p-12 order-2 md:order-1">
                     <h2 className="text-3xl font-headline font-bold">{siteConfig.classIntro.title}</h2>
                     <p className="mt-4 text-muted-foreground leading-relaxed">{siteConfig.classIntro.description}</p>
-                    <div className="mt-6">
+                    <div className="mt-6 flex justify-end">
                       <Button asChild>
                         <Link href="/class-intro">
                           查看更多 <ArrowRight />
@@ -90,7 +90,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-12 text-center">
+                <div className="mt-8 flex justify-end">
                     <Button asChild>
                       <Link href="/member-showcase">
                         查看更多 <ArrowRight />
@@ -119,7 +119,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <div className="mt-12 text-center">
+                  <div className="mt-8 flex justify-end">
                       <Button asChild>
                         <Link href="/teacher-showcase">
                           查看更多 <ArrowRight />
