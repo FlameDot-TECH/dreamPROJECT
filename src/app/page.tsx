@@ -1,11 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { WelcomeLetter } from '@/components/welcome-letter';
 import { siteConfig } from '@/lib/data';
 import { Card } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -48,6 +50,13 @@ export default function Home() {
                   <div className="p-8 md:p-12 order-2 md:order-1">
                     <h2 className="text-3xl font-headline font-bold">{siteConfig.classIntro.title}</h2>
                     <p className="mt-4 text-muted-foreground leading-relaxed">{siteConfig.classIntro.description}</p>
+                    <div className="mt-6">
+                      <Button asChild>
+                        <Link href="/class-intro">
+                          查看更多 <ArrowRight />
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                   <div className="relative h-64 md:h-full min-h-[300px] order-1 md:order-2">
                     <Image
@@ -81,6 +90,13 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+                <div className="mt-12 text-center">
+                    <Button asChild>
+                      <Link href="/member-showcase">
+                        查看更多 <ArrowRight />
+                      </Link>
+                    </Button>
+                </div>
               </Card>
             </section>
 
@@ -102,6 +118,13 @@ export default function Home() {
                         <p className="text-muted-foreground">{teacher.subject}</p>
                       </div>
                     ))}
+                  </div>
+                  <div className="mt-12 text-center">
+                      <Button asChild>
+                        <Link href="/teacher-showcase">
+                          查看更多 <ArrowRight />
+                        </Link>
+                      </Button>
                   </div>
                </Card>
             </section>
